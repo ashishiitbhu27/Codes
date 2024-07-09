@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define endl '\n'
+#define int long long
+#define ll long long
+ 
+#define YES cout<<"YES\n";
+#define NO cout<<"NO\n";
+ 
+#define Yes cout<<"Yes\n";
+#define No cout<<"No\n";
+ 
+const int MOD = 1e9+7;
+const int INF = LLONG_MAX >> 1;
+ 
+void solve(){
+    int n,k; cin>>n>>k;
+ 
+    if(n%2 == 0){
+        if(k*k > n || k%2 == 1){
+            NO
+            return;
+        }
+        else YES
+    }
+    else{
+        if(k*k > n || k%2 == 0){
+            No
+            return;
+        }
+        else YES
+    }
+}
+ 
+signed main(){
+    ios::sync_with_stdio(false); cin.tie(NULL);
+    
+    int t; cin>>t;
+    while(t--){
+        solve();
+    }
+}
